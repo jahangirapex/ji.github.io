@@ -1,0 +1,49 @@
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+disqus: asvid
+google_analytics: UA-68530276-7
+title: Developers blog
+url: http://asvid.github.io/
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Log.Adam()
+
+description: Hi I'm Adam
+author:
+  name: Adam Świderski
+  email: adam.swiderski89@gmail.com
+  github: asvid
+  linkedin: aswiderski
+  bio: and I'm a software developer
+  disqus_bio: software developer
+  email_md5: c0092be8e7a926ead4c4a818ea622858
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+sidebar_background_image: /assets/sa.jpg
+
+BASE_PATH:
+ABOUT: about
+
+gems:
+  - jekyll-paginate
+  - jekyll-crosspost-to-medium
+
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .jekyll-crosspost_to_medium
+  status: draft
+  text: "<p><i>This article was originally posted <a href=\"http://asvid.github.io\" rel=\"canonical\">on my own site</a>.</i></p>"
+  license: all-rights-reserved
+  backdate: true
